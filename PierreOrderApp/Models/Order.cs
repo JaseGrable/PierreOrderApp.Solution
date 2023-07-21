@@ -11,6 +11,8 @@ namespace PierreOrderApp.Models
         public Order(string details)
         {
             Details = details;
+            _instances.Add(this);
+            ID = _instances.Count;
         }
         public static List<Order> GetAll()
         {

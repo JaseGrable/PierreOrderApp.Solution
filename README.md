@@ -1,8 +1,8 @@
-# (Application Name)
+# Pierre's Bakery Order App
 
 #### (Brief Description of Application)
 
-#### By (Your Name Here)
+#### By Jase Grable
 
 ## Technologies Used
 
@@ -27,5 +27,7 @@
 - _should go here_
 
 ## License
+
 # CSharpTemplate
-This is a C# project template 
+
+This is a C# project template

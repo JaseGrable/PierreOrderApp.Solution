@@ -11,7 +11,7 @@ namespace PierreOrderApp.Tests
     {
         public void Dispose()
         {
-            OrderTests.ClearAll();
+            Order.ClearAll();
         }
 
         [TestMethod]

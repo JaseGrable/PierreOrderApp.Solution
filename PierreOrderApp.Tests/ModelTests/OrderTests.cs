@@ -65,5 +65,15 @@ namespace PierreOrderApp.Tests
             int result = newOrder.ID;
             Assert.AreEqual(1, result);
         }
+        [TestMethod]
+        public void Find_ReturnsCorrectOrder_Order()
+        {
+            string details01 = "20 loaves";
+            string details02 = "20 pastries";
+            Order newOrder1 = new Order(details01);
+            Order newOrder2 = new Order(details02);
+            Order result = Order.Find(2);
+            Assert.AreEqual(newOrder2, result);
+        }
     }
 }

@@ -11,6 +11,8 @@ namespace PierreOrderApp.Models
         public Vendor(string vendorName)
         {
             Name = vendorName;
+            _instances.Add(this);
+            ID = _instances.Count;
         }
         public static void ClearAll()
         {

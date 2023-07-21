@@ -29,5 +29,14 @@ namespace PierreOrderApp.Tests
             string result = newVendor.Name;
             Assert.AreEqual(name, result);
         }
+        [TestMethod]
+        public void GetID_ReturnsID_Int()
+        {
+            string name = "Test Vendor";
+            Vendor newVendor = new Vendor(name);
+            int result = newVendor.ID;
+            Assert.AreEqual(1, result);
+        }
+
     }
 }

@@ -57,5 +57,13 @@ namespace PierreOrderApp.Tests
             List<Order> result = Order.GetAll();
             CollectionAssert.AreEqual(newList, result);
         }
+        [TestMethod]
+        public void GetID_OrderInstantiatedWithAnIDAndGetterReturns_Int()
+        {
+            string details = "20 loaves";
+            Order newOrder = new Order(details);
+            int result = newOrder.ID;
+            Assert.AreEqual(1, result);
+        }
     }
 }

@@ -46,5 +46,16 @@ namespace PierreOrderApp.Tests
             List<Order> result = Order.GetAll();
             CollectionAssert.AreEqual(newList, result);
         }
+        [TestMethod]
+        public void GetAll_ReturnsOrders_OrderList()
+        {
+            string details01 = "20 loaves";
+            string details02 = "20 pastries";
+            Order newOrder1 = new Order(details01);
+            Order newOrder2 = new Order(details02);
+            List<Order> newList = new List<Order> { newOrder1, newOrder2 };
+            List<Order> result = Order.GetAll();
+            CollectionAssert.AreEqual(newList, result);
+        }
     }
 }

@@ -10,7 +10,7 @@ namespace PierreOrderApp.Models
 
         public Vendor(string vendorName)
         {
-
+            Name = vendorName;
         }
         public static void ClearAll()
         {

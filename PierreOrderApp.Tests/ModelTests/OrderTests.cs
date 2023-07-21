@@ -39,5 +39,12 @@ namespace PierreOrderApp.Tests
             string result = newOrder.Details;
             Assert.AreEqual(newDetails, result);
         }
+        [TestMethod]
+        public void GetAll_ReturnsEmptyList_ItemList()
+        {
+            List<Order> newList = new List<Order> { };
+            List<Order> result = Order.GetAll();
+            CollectionAssert.AreEqual(newList, result);
+        }
     }
 }

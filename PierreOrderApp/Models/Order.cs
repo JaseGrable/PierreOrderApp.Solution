@@ -22,5 +22,9 @@ namespace PierreOrderApp.Models
         {
             _instances.Clear();
         }
+        public static Order Find(int searchID)
+        {
+            return _instances[searchID - 1];
+        }
     }
 }

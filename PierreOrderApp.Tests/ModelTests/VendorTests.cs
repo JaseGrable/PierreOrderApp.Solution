@@ -1,5 +1,4 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using PierreOrderApp.Models;
 using System;
@@ -36,6 +35,11 @@ namespace PierreOrderApp.Tests
             Vendor newVendor = new Vendor(name);
             int result = newVendor.ID;
             Assert.AreEqual(1, result);
+        }
+        [TestMethod]
+        public void GetAll_ReturnsAllVendorObjects_VendorList()
+        {
+
         }
 
     }

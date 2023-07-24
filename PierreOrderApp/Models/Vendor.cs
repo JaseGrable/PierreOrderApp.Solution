@@ -22,5 +22,9 @@ namespace PierreOrderApp.Models
         {
             return _instances;
         }
+        public static Vendor Find(int searchID)
+        {
+            return _instances[searchID - 1];
+        }
     }
 }
